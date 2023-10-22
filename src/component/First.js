@@ -40,6 +40,7 @@ const First = () => {
   function toggleTodo(id, completed) {
     setTodos((currentTodos) => {
       return currentTodos.map((todo) => {
+        //checks if the id is there or not
         if (todo.id === id) {
           return { ...todo, completed };
         }
